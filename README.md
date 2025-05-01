@@ -10,5 +10,4 @@ A responsive front-end clone of the Target website built using **HTML**, **CSS**
 - Interactive elements using JavaScript
 - Clean and accessible HTML structure
 
-## 📁 Folder Structure
 
