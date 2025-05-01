@@ -1,0 +1,606 @@
+/* ------ Reset and Global Styles ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  /* ------ Top Navigation Bar ------ */
+  #top-navbar {
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .top-nav-list li {
+    margin-right: 20px;
+  }
+  
+  .top-nav-list a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-nav-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .store-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .store-finder {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .store-finder svg {
+    margin-right: 5px;
+  }
+  
+  /* ------ Main Header ------ */
+  .main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* ------ Main Navigation ------ */
+  .main-nav {
+    margin-right: 20px;
+  }
+  
+  .main-nav-list {
+    display: flex;
+  }
+  
+  .main-nav-list li {
+    position: relative;
+    margin-right: 24px;
+  }
+  
+  .nav-item {
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    padding: 8px 0;
+    display: block;
+  }
+  
+  .nav-item:hover {
+    color: #cc0000;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 16px;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* ------ Search Container ------ */
+  .search-container {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .search-form {
+    position: relative;
+    display: flex;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px 48px 12px 16px;
+    border: 2px solid #ddd;
+    border-radius: 24px;
+    font-size: 14px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #cc0000;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    padding: 8px;
+  }
+  
+  .search-button:hover {
+    color: #cc0000;
+  }
+  
+  /* ------ User Actions ------ */
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-link, .cart-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .account-link svg, .cart-link svg {
+    margin-bottom: 4px;
+  }
+  
+  .account-link:hover, .cart-link:hover {
+    color: #cc0000;
+  }
+  
+  .cart-count {
+    position: relative;
+    top: -28px;
+    right: -10px;
+    background-color: #cc0000;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+  /* ------ Hero Banner ------ */
+  .hero-banner {
+    margin: 20px 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 400px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .btn-primary {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #aa0000;
+  }
+  
+  .btn-secondary {
+    background-color: #fff;
+    color: #333;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+  }
+  
+  .btn-outline:hover {
+    background-color: #cc0000;
+    color: #fff;
+  }
+  
+  /* ------ Category Highlights ------ */
+  .category-highlights {
+    margin: 40px 0;
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .category-item {
+    text-align: center;
+  }
+  
+  .category-image {
+    margin-bottom: 12px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .category-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* ------ Deals Section ------ */
+  .deals-section {
+    margin: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .deal-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .deal-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .deal-image {
+    position: relative;
+  }
+  
+  .deal-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .deal-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #cc0000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .deal-info {
+    padding: 16px;
+  }
+  
+  .deal-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .deal-info p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* ------ What's New Section ------ */
+  .whats-new-section {
+    margin: 40px 0;
+  }
+  
+  .new-arrivals {
+    margin-top: 20px;
+  }
+  
+  .new-arrival-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .new-arrival-image {
+    flex: 1;
+  }
+  
+  .new-arrival-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .new-arrival-text {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .new-arrival-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .new-arrival-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  
+  /* ------ Email Sign-up ------ */
+  .email-signup {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    margin: 40px 0;
+  }
+  
+  .signup-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .signup-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-group {
+    display: flex;
+    width: 100%;
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .form-group button {
+    padding: 12px 24px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: 700;
+  }
+  
+  /* ------ Footer ------ */
+  .site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  
+  .footer-column {
+    width: 25%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    width: 25%;
+  }
+  
+  .footer-social h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .social-icons a {
+    color: #666;
+  }
+  
+  .social-icons a:hover {
+    color: #cc0000;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .footer-legal ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-legal ul li {
+    margin-left: 16px;
+  }
+  
+  .footer-legal ul li a:hover {
+    text-decoration: underline;
+  }
