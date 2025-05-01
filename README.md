@@ -4,7 +4,7 @@ A responsive front-end clone of the Target shopping website, built with HTML, CS
 
 ## 🌐 Live Demo
 
-[View the Live Site](https://your-username.github.io/your-repo-name/)  
+[View the Live Site](https://oviesao.github.io/shopping-at-target-clone/)  
 
 ---
 
